@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra đối xứng</title>
+</head>
+<body>
+><script>
+  function reverse_num(n){
+    n = n.toString()
+    return n.split("").reverse().join("");
+  }
+  function symmetrical_num(n){
+    // flag = 1 => số đối xứng
+    // flag = 0 => không phải số đối xứng
+    let flag =0;
+    if (reverse_num(n) == n) flag = 1;
+    return flag;
+  }
+  let n= prompt(" Nhap so tu nhien= ");
+  let check = symmetrical_num(n);
+  if( check == 1 ) document.write(n + " la so doi xung");
+  else document.write(n + " khong phai la la so doi xung");
+</script>
+</body>
+</html>
