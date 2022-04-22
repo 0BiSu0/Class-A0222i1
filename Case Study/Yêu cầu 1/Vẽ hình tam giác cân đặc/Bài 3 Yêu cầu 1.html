@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 3</title>
+</head>
+<body>
+<script>
+    let height = parseInt(prompt("Nhập vào chiều cao: "));
+    let width = height * 2 -1;
+    let shape = "";
+    for ( let i = 1; i <= height; i++);{
+    for (let j = 0; j < width / 2 - i; i++){
+        shape += "$ensp;";
+    }
+    for (let k = 0; k < i * 2 -1; k++){
+        shape += "*";
+    }
+    shape += "<br>";
+    }
+    document.write(shape);
+</script>
+</body>
+</html>
